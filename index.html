@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HW6-DOM-part-2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+<section class="container">
+    <div class="block d-flex flex-wrap justify-content-center align-items-center">
+        <div class="mr-4">
+            <div id="figure"></div>
+        </div>
+
+        <div class="figure-control">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="typeFigure">Тип фигуры</label>
+                </div>
+                <select class="custom-select" id="typeFigure">
+                    <option selected value="square">квадрат</option>
+                    <option value="rectangle">прямоугольник</option>
+                    <option value="circle">круг</option>
+                </select>
+            </div>
+            <div class="input-group mb-3 flex-wrap align-items-center">
+                <label class="input-group-text mr-4" for="colorFigure">Цвет фигуры</label>
+                <input type="color" id="colorFigure" name="colorFigure"
+                       value="#00000">
+            </div>
+            <button class="btn btn-primary" id="applyBtn">Применить</button>
+        </div>
+    </div>
+</section>
+<script type="text/javascript" src="src/js/index.js"></script>
+</body>
+</html>
